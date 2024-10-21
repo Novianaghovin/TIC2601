@@ -3,9 +3,9 @@ To clone this project to VSCODE:
   2. cd TIC2601
 
 few git features that will be used to create this project often:
-  1. Stage the changes: ** git add . **
-  2. Commit the changes: ** git commit -m "Description of changes" **
-  3. Push changes back to GitHub: ** git push origin master **
+  1. Stage the changes: **git add .**
+  2. Commit the changes: **git commit -m "Description of changes"**
+  3. Push changes back to GitHub: **git push origin master**
 
 Key Differences:
 - Staging (git add): Prepares changes for commit, allowing you to select which changes will be included in the next commit. n/
