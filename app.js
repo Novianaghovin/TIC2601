@@ -12,6 +12,3 @@ const db = new sqlite3.Database('./ConnectToDB.db', sqlite3.OPEN_READWRITE, (err
     // If no error occurs, log a message indicating the successful connection to the database
     console.log('Connected to the database.');
 });
-
-
-hello 
