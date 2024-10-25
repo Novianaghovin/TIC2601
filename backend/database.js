@@ -70,5 +70,6 @@ const db = new sqlite3.Database(DB_PATH, (err) => {
     }
 });
 
+
 // Export the database instance for use in other modules
 module.exports = db;

@@ -13,6 +13,8 @@ app.use(cors());
 
 // Routes
 
+//.GET [insert queries] , .PUT, .POST, .DELETE function to be inserted -- please see week10 tutorial  
+
 // Get all users
 app.get('/users', (req, res) => {
     db.all('SELECT * FROM users', [], (err, rows) => {
