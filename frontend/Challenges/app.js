@@ -19,6 +19,7 @@ buttons.forEach(buttonText => {
 app.appendChild(menu);
 
 // Create a container for the challenges
+
 const container = document.createElement('div');
 container.className = 'container';
 
