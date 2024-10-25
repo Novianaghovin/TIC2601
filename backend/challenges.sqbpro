@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><sqlb_project><db path="challenges.db" readonly="0" foreign_keys="1" case_sensitive_like="0" temp_store="0" wal_autocheckpoint="1000" synchronous="2"/><attached/><window><main_tabs open="structure browser pragmas query" current="3"/></window><tab_structure><column_width id="0" width="300"/><column_width id="1" width="0"/><column_width id="2" width="100"/><column_width id="3" width="2407"/><column_width id="4" width="0"/><expanded_item id="0" parent="1"/><expanded_item id="1" parent="1"/><expanded_item id="2" parent="1"/><expanded_item id="3" parent="1"/></tab_structure><tab_browse><table title="sqlite_sequence" custom_title="0" dock_id="1" table="4,15:mainsqlite_sequence"/><dock_state state="000000ff00000000fd00000001000000020000000000000000fc0100000001fb000000160064006f0063006b00420072006f00770073006500310100000000ffffffff0000011e00ffffff000000000000000000000004000000040000000800000008fc00000000"/><default_encoding codec=""/><browse_table_settings/></tab_browse><tab_sql><sql name="SQL 1*">CREATE TABLE Challenges (
+<?xml version="1.0" encoding="UTF-8"?><sqlb_project><db path="challenges.db" readonly="0" foreign_keys="1" case_sensitive_like="0" temp_store="0" wal_autocheckpoint="1000" synchronous="2"/><attached/><window><main_tabs open="structure browser pragmas query" current="3"/></window><tab_structure><column_width id="0" width="300"/><column_width id="1" width="0"/><column_width id="2" width="100"/><column_width id="3" width="2407"/><column_width id="4" width="0"/><expanded_item id="0" parent="1"/><expanded_item id="1" parent="1"/><expanded_item id="2" parent="1"/><expanded_item id="3" parent="1"/></tab_structure><tab_browse><table title="Challenges" custom_title="0" dock_id="1" table="4,10:mainChallenges"/><dock_state state="000000ff00000000fd000000010000000200000376000002cafc0100000001fb000000160064006f0063006b00420072006f00770073006500310100000000000003760000011e00ffffff000002690000000000000004000000040000000800000008fc00000000"/><default_encoding codec=""/><browse_table_settings><table schema="main" name="Challenges" show_row_id="0" encoding="" plot_x_axis="" unlock_view_pk="_rowid_" freeze_columns="0"><sort/><column_widths><column index="1" value="79"/><column index="2" value="95"/><column index="3" value="263"/><column index="4" value="117"/><column index="5" value="70"/><column index="6" value="108"/><column index="7" value="62"/></column_widths><filter_values/><conditional_formats/><row_id_formats/><display_formats/><hidden_columns/><plot_y_axes/><global_filter/></table><table schema="main" name="activity_log" show_row_id="0" encoding="" plot_x_axis="" unlock_view_pk="_rowid_" freeze_columns="0"><sort/><column_widths><column index="1" value="68"/><column index="2" value="90"/></column_widths><filter_values/><conditional_formats/><row_id_formats/><display_formats/><hidden_columns/><plot_y_axes/><global_filter/></table><table schema="main" name="badge_records" show_row_id="0" encoding="" plot_x_axis="" unlock_view_pk="_rowid_" freeze_columns="0"><sort/><column_widths><column index="1" value="60"/><column index="2" value="151"/></column_widths><filter_values/><conditional_formats/><row_id_formats/><display_formats/><hidden_columns/><plot_y_axes/><global_filter/></table><table schema="main" name="sqlite_sequence" show_row_id="0" encoding="" plot_x_axis="" unlock_view_pk="_rowid_" freeze_columns="0"><sort/><column_widths><column index="1" value="111"/><column index="2" value="35"/></column_widths><filter_values/><conditional_formats/><row_id_formats/><display_formats/><hidden_columns/><plot_y_axes/><global_filter/></table></browse_table_settings></tab_browse><tab_sql><sql name="SQL 1">CREATE TABLE Challenges (
     challenge_id INTEGER PRIMARY KEY AUTOINCREMENT,
     challenge_type TEXT NOT NULL,
     challenge_name TEXT NOT NULL,
@@ -9,4 +9,33 @@
 	FOREIGN KEY (badge_id) REFERENCES badge_records(badge_id)
     FOREIGN KEY (activity_id) REFERENCES activity_log(activity_id)
 );
+
+CREATE TABLE badge_records (
+    badge_id INTEGER PRIMARY KEY AUTOINCREMENT,
+    badge_name TEXT NOT NULL
+);
+
+CREATE TABLE activity_log (
+    activity_id INTEGER PRIMARY KEY AUTOINCREMENT,
+    activity_name TEXT NOT NULL
+);
+
+-- Insert sample badges
+INSERT INTO badge_records (badge_name) VALUES 
+('Oct 2024 5km Run Challenge'), 
+('Nov 2024 5km Run Challenge'), 
+('Dec 2024 5km Run Challenge');
+
+-- Insert sample activities
+INSERT INTO activity_log (activity_name) VALUES 
+('Running'), 
+('Walking'), 
+('Swimming');
+
+-- Insert sample challenges
+INSERT INTO Challenges (challenge_type, challenge_name, challenge_deadline, activity_id, participants_num, badge_id) VALUES 
+('Running', 'Oct 2024 5km Challenge', '2024-12-15', 001, 25, 001),
+('Walking', 'Oct 2024 10k Steps Challenge', '2024-11-30', 001, 60, 001),
+('Running', 'Nov 2024 5km Challenge', '2024-12-15', 002, 35, 002),
+('Walking', 'Nov 2024 20k Steps Challenge', '2024-11-30', 002, 99, 002);
 </sql><current_tab id="0"/></tab_sql></sqlb_project>

@@ -45,7 +45,7 @@ app.get('/api/available-challenges', (req, res) => {
 // API to join a challenge
 app.post('/api/join-challenge/:id', (req, res) => {
     const challengeId = req.params.id;
-    const userId = 1; // Assume user ID is 1 for now
+    const userId = req.user.id; // Get user ID from the authenticated session
     const sql = `INSERT INTO user_challenges (user_id, challenge_id) VALUES (?, ?)`;
 
     db.run(sql, [userId, challengeId], function (err) {
