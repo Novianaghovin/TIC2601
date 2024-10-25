@@ -5,7 +5,24 @@ To clone this project to VSCODE:
 few git features that will be used to create this project often:
   1. Stage the changes: **git add .**
   2. Commit the changes: **git commit -m "Description of changes"**
-  3. Push changes back to GitHub: **git push origin master**
+  3. Push changes back to GitHub: **git push origin <branch name>**
+
+Connect to your branches
+# Check local branches
+git branch
+
+# Create and switch to the new branch if it doesn't exist
+git checkout -b frontend-testing
+
+# Stage your changes
+git add .
+
+# Commit your changes
+git commit -m "Your descriptive commit message"
+
+# Push the new branch to the remote repository
+git push origin frontend-testing
+
 
 Key Differences:
 - Staging (git add): Prepares changes for commit, allowing you to select which changes will be included in the next commit. n/
