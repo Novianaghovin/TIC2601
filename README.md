@@ -25,3 +25,5 @@ My Challenges with the leaderboard button and Available Challenges with the Join
 3) My Challenges will not be populated yet as it requires integration with the other tables.
 
 4) The top navigation bar have all the buttons required but the feature is not available yet as well.
+
+5) All data within the available challenges table are using generated sample data
