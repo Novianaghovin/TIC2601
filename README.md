@@ -1,12 +1,12 @@
 GUIDE TO VIEW MY CHALLENGE WEB 
 -
-1) On your terminal type >**git status** -> check which branch are u on, if its not my branch , then use **git checkout -b For-yk-test** to move to my branch
-2) Open up 2 terminals tab side by side preferably, 
+1) On your terminal type >**git status** -> check which branch are u on, if its not my branch , then use **git checkout For-yk-test** to move to my branch
+3) Open up 2 terminals tab side by side preferably, 
 one of the terminal you type **>cd public** 
 the other terminal you type **>cd my-app**
 
-3) For the 'public' terminal, you type >**node server.js** to start the backend service
-4) For the 'my-app' terminal, you type >**npm start** to start the react js service -> it will open up the challenge web automatically
+4) For the 'public' terminal, you type >**node server.js** to start the backend service
+5) For the 'my-app' terminal, you type >**npm start** to start the react js service -> it will open up the challenge web automatically
 
 
 LOGS 
