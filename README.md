@@ -1,14 +1,16 @@
 GUIDE TO VIEW MY CHALLENGES WEB UI
 -
+**TWO METHODS**
 1) On your terminal type >**git status** -> check which branch are u on, if its not my branch , then use **git checkout For-yk-test** to move to my branch
-   **ELSE** you can download my code and just follow step 3 - 5
+2) Download my code and just follow step 3 - 5 
 
-4) Open up 2 terminals tab side by side preferably, 
+
+3) Open up 2 terminals tab side by side preferably, 
 one of the terminal you type **>cd public** 
 the other terminal you type **>cd my-app**
 
-5) For the 'public' terminal, you type >**node server.js** to start the backend service
-6) For the 'my-app' terminal, you type >**npm start** to start the react js service -> it will open up the challenges web UI automatically
+4) For the 'public' terminal, you type >**node server.js** to start the backend service
+5) For the 'my-app' terminal, you type >**npm start** to start the react js service -> it will open up the challenges web UI automatically
 
 
 LOGS 
