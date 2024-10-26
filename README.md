@@ -1,6 +1,7 @@
 GUIDE TO VIEW MY CHALLENGES WEB UI
 -
 1) On your terminal type >**git status** -> check which branch are u on, if its not my branch , then use **git checkout For-yk-test** to move to my branch
+
 **ELSE** you can download my code and just follow step 3 - 5
 
 4) Open up 2 terminals tab side by side preferably, 
