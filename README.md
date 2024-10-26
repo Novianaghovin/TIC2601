@@ -15,7 +15,7 @@ the other terminal you type **>cd my-app**
 
 LOGS 
 -
-UPDATED AS OF 26 OCTOBER 2024:
+UPDATES AS OF 26 OCTOBER 2024:
 1) Have built the challenge web UI using react.js to display the top navigation bar, 
 My Challenges with the leaderboard button and Available Challenges with the Join button.
 
